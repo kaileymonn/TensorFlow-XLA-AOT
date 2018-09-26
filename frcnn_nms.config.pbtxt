@@ -1,0 +1,33 @@
+feed {
+	id { node_name: "Squeeze" }
+	shape {
+		dim { size: 1 }
+		dim { size: 4 }
+	}
+}
+feed {
+	id { node_name: "FirstStageBoxPredictor/concat_1" }
+	shape {
+		dim { size: 2 }
+	}
+}
+feed {
+	id { node_name: "Shape_1" }
+	shape {
+		dim { size: 576 }
+	}
+}
+feed {
+	id { node_name: "Shape" }
+	shape {}
+}
+fetch {
+	id { node_name: "Reshape_6" }
+}
+fetch {
+	id { node_name: "Reshape_5" }
+}
+fetch {
+	id { node_name: "SecondStagePostprocessor/ExpandDims" }
+}
+

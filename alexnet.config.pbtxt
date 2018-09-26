@@ -1,0 +1,13 @@
+feed {
+	id { node_name: "Placeholder"}
+	shape {
+		dim { size: 1 }
+		dim { size: 227 }
+		dim { size: 227 }
+		dim { size: 3 }
+	}
+}
+fetch {
+	id { node_name: "Softmax" }
+}
+

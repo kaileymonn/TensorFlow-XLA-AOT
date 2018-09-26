@@ -1,0 +1,16 @@
+feed {
+	id { node_name: "image_tensor" }
+	shape {
+		dim { size: 1 }
+		dim { size: 300 }
+		dim { size: 300 }
+		dim { size: 3 }
+	}
+}
+fetch {
+	id { node_name: "Preprocessor/mul" }
+}
+fetch {
+	id { node_name: "Preprocessor/map/TensorArrayStack_1/TensorArrayGatherV3" }
+}
+

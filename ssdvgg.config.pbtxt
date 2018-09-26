@@ -1,0 +1,16 @@
+feed {
+	id { node_name: "image_input" }
+	shape {
+		dim { size: 1 }
+		dim { size: 300 }
+		dim { size: 300 }
+		dim { size: 3 }
+	}
+}
+fetch {
+	id { node_name: "output/output" }
+}
+fetch {
+	id { node_name: "output/strided_slice" }
+}
+
